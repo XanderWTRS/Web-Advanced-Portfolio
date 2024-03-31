@@ -1,0 +1,109 @@
+h1
+{
+    margin: 0;
+}
+h3
+{
+    margin-top: -4vh;
+    margin-bottom: 2vh;
+    font-size: 1rem;
+}
+
+#dataBase-structure
+{
+    text-align: center;
+    font-size: 18px;
+}
+
+table 
+{
+    width: 60vw;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+
+th, td 
+{
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th 
+{
+    background-color: #f2f2f2;
+    color: black;
+}
+td 
+{
+    font-weight: 400;
+}
+
+th:nth-child(1)
+{
+    width: 8vw;
+}
+th:nth-child(2)
+{
+    width: 8vw;
+}
+th:nth-child(3)
+{
+    width: 26vw;
+}
+th:nth-child(4)
+{
+    width: 8vw;
+}
+
+#button-container
+{
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+#right
+{
+    display: flex;
+}
+
+#button-container #resetLocalStorage
+{
+    width: 10vw;
+}
+
+#button-container #emailPassword
+{
+    width: 15vw;
+}
+#button-container #showAll
+{
+    width: 10vw;
+    margin-right: 2vw;
+    background-color: orange;
+}
+
+#resetLocalStorage, #emailPassword, #showAll
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#resetLocalStorage:hover, #emailPassword:hover
+{
+    background-color: #d32f2f;
+}
+#button-container #showAll:hover
+{
+    background-color: #ff8c1a;
+}
