@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SignUp</title>
+    <link rel="icon" href="/IMG/logo.svg">
+
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="/CSS/signUp.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main id="main">
+        <form id="signUpForm" class="form" action="/">
+            <div id="wrapper">
+                <h2>Sign Up</h2>
+                <div class="form-element">
+                    <label for="firstName">First Name</label>
+                    <input id="firstName" name="firstName" type="text">
+                    <div class="error"></div>
+                </div>
+                <div class="form-element">
+                    <label for="lastName">Last Name</label>
+                    <input id="lastName" name="lastName" type="text">
+                    <div class="error"></div>
+                </div>
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="text" placeholder="firstname.lastname@student.ehb.be">
+                    <div class="error"></div>
+                </div>
+                <div class="form-element">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password">
+                    <div class="error"></div>
+                </div>
+                <div class="form-element">
+                    <label for="password2">Password Again</label>
+                    <input id="password2" name="password2" type="password">
+                    <div class="error"></div>
+                </div>
+                <button type="submit">Sign Up</button>
+                <p id="login-text">Already have an account? <a id="login-button">Login</a></p>
+            </div>
+            
+            <div id="Login-card" >
+                <img src="/IMG/Checkmark.svg">
+                <h2 id="Login-title"></h2>
+                <button id="home-button">Go to home</button>
+            </div>
+        </form>
+
+        <form id="logInForm" class="form" action="/" style="display: none;">
+            <div id="wrapper">
+                <h2>Login</h2>
+                <div class="form-element">
+                    <label for="email-login">Email</label>
+                    <input id="email-login" name="email-login" type="text"  placeholder="firstname.lastname@student.ehb.be">
+                    <div class="error"></div>
+                </div>
+                <div class="form-element">
+                    <label for="password-login">Password</label>
+                    <input id="password-login" name="password-login" type="password">
+                    <div class="error"></div>
+                </div>
+                <button type="submit">Login</button>
+                <p id="signup-text">Don't have an account? <a id="signup-button">Sign Up</a></p>
+            </div>
+        </form>
+    </main>
+
+    <script src="/JS/isLoggedIn.js" type="module"></script>>
+    <script src="/JS/signUp.js" type="module"></script>
+</body>
+</html>
