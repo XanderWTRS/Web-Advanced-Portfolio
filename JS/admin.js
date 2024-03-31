@@ -1,4 +1,3 @@
-//https://www.youtube.com/watch?v=8MoElay6dWU
 import {signUplogInButton, buttonState } from './isLoggedIn.js';
 buttonState();
 

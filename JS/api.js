@@ -7,9 +7,6 @@ signUplogInButton.addEventListener('click', () =>
 });
 
 //--------------API----------------
-
-//https://www.youtube.com/watch?v=MdIfZJ08g2I
-
 const weatherForm = document.querySelector('.weatherForm');
 const cityInput = document.querySelector('.cityInput');
 const card = document.querySelector('.card'); 
