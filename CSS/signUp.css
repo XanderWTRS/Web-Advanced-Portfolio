@@ -1,0 +1,123 @@
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+.form 
+{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50vw;
+    text-align: left;
+    margin-top: -40px;
+}
+
+h2 
+{
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.form-element 
+{
+    margin-bottom: 20px;
+}
+
+.form-element.success input 
+{
+    border-color: #2ecc71;
+}
+.form-element.error input 
+{
+    border-color: #e74c3c;
+}
+
+label 
+{
+    display: block;
+    margin-bottom: 4px;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+input 
+{
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.error 
+{
+    color: red;
+    margin-top: 0px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+button 
+{
+    width: 100%;
+}
+
+button:hover 
+{
+    background-color: #555;
+}
+
+#Login-card 
+{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    animation: slideIn 0.7s ease-in-out;
+}
+
+@keyframes slideIn 
+{
+    0% 
+    {
+        opacity: 0;
+    }
+    100% 
+    {
+        opacity: 1;
+    }
+}
+
+#Login-card button
+{
+    width: 50%;
+}
+
+#wrapper
+{
+    display: block;
+}
+
+#login-text, #signup-text
+{
+    color: black;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+#login-button , #signup-button
+{
+    border: none;
+    color: #555;
+    cursor: pointer;
+}
+#login-button:hover, #signup-button:hover
+{
+    text-decoration: underline;
+}
