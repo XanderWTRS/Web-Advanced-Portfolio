@@ -1,0 +1,96 @@
+body
+{
+    font-family: "Roboto", sans-serif;
+}
+h1
+{
+    margin-top: -20px;
+}
+#weather-api
+{
+    width: 25%;
+    margin: 0 auto;
+    margin-top: -20px;
+}
+.weatherForm
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.weatherForm input
+{
+    width: 64%;
+    padding: 10px;
+    margin: 0px;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.weatherForm button
+{
+    width: 32%;
+}
+
+.card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.flexbox
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flexbox:nth-child(2)
+{
+    margin-top: -20px;
+}
+
+.cityDisplay
+{
+    margin: 0px;
+    font-size: 2rem;
+}
+.tempDisplay
+{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+.humidityDisplay
+{
+    font-size: 16px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+.descDisplay
+{
+    font-size: 16px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+.gifDisplay
+{
+    font-size: 100px;
+    margin: 16px 0;
+}
+.errorDisplay
+{
+    font-size: 24px;
+    color: red;
+    margin: 20px 0;
+    font-weight: bold;
+}
