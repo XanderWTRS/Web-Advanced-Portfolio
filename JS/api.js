@@ -23,16 +23,16 @@ weatherForm.addEventListener("submit", event =>
         getWeatherData(city)
             .then(weatherData => 
             {
-                displayWeatherInfo(weatherData);
+                displayWeatherData(weatherData);
             })
             .catch(error => 
             {
-                displayError(error);
+                errorMessage(error);
             });
     } 
     else 
     {
-        displayError("Please enter a city name");
+        errorMessage("Please enter a city name");
     }
 });
 
@@ -55,7 +55,7 @@ async function getWeatherData(city)
     });
 }
 
-function displayWeatherInfo(data)
+function displayWeatherData(data)
 {
     const {name: city, main: {temp, humidity}, weather: [{description, id}]} = data; 
     card.textContent = "";
@@ -99,7 +99,7 @@ function getWeatherGif(weatherId)
     }
 }
 
-function displayError(message)
+function errorMessage(message)
 {
     const errorDisplay = document.createElement("p");
     errorDisplay.textContent = message;
